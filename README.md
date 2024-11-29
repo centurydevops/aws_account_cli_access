@@ -8,4 +8,26 @@
 
 `$ source aws_temp_credentials.sh`
 
+## sample `~/.ssh/config` file should look like this:
 
+```
+# github config for centurydevops
+Host github.com-centurydevops
+  HostName github.com
+  User centurydevops
+  IdentityFile ~/.ssh/cent_key
+  IdentitiesOnly yes
+
+# etech-technology GitHub account
+Host github.com-etech-technology
+  HostName github.com
+  User etech-technology
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+```
+# Then run the following commands each time you want to clone a specific repo from a specific github account
+
+1. `git remote set-url origin git@github.com-etech-technology:etech-technology/aws_access.git`
+Here you can replace `aws_access` repository which any repository under `etech-technology` github account
+2. `git remote set-url origin git@github.com-centurydevops:centurydevops/repo-from-centurydevops.git`
+Again here replace `repo-from-centurydevops` with want ever you want from that github account
