@@ -9,7 +9,7 @@
 `$ source aws_temp_credentials.sh`
 
 ## How can i manage two different github accounts from the same local machine?
-Ans:
+Ans: `vi ~/.ssh/config` and load the following samples making adjustments as needed
 # sample `~/.ssh/config` file should look like this:
 
 ```
