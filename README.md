@@ -28,6 +28,13 @@ Host github.com-etech-technology
 # Then run the following commands each time you want to clone a specific repo from a specific github account
 
 1. `git remote set-url origin git@github.com-etech-technology:etech-technology/aws_access.git`
-Here you can replace `aws_access` repository which any repository under `etech-technology` github account
+Here you can replace `aws_access` repository with any repository under `etech-technology` github account
 2. `git remote set-url origin git@github.com-centurydevops:centurydevops/repo-from-centurydevops.git`
-Again here replace `repo-from-centurydevops` with want ever you want from that github account
+Again here replace `repo-from-centurydevops` with whatever you want from that github account
+
+# Remember that those keys are generated from
+`ssh-keygen -t ed25519 -C "email-used-to-create-github-account@gmail.com"`
+Enter the path when prompt:
+`/Users/your_username/.ssh/id_ed25519_personal` Just hit `enter` on your keyboard till the end
+
+Then `cat ~/.ssh/id_ed25519_personal` and load it to the respective github accounts
